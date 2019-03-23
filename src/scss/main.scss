@@ -37,10 +37,20 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/print";
 
+@import "./off-canvas";
+@import "./section";
 
 
+.bg-theme-gradient{
+	background: #a8e063;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1CB803, #a8e063);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1CB803, #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Show it is fixed to the top */
 body {
-  	min-height: 75rem;
+  min-height: 75rem;
+  padding-top: 4.5rem;
 }
 
 
@@ -48,5 +58,78 @@ body {
 	background: #00b09b;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
+
+
+$i: 0;
+$base: 1px;
+
+@while $i <= 250{
+
+	.p-#{$i}{
+    	padding: $base * $i;
+	}
+
+	.px-#{$i}{
+    	padding-left: $base * $i;
+    	padding-right: $base * $i;
+	}
+
+	.py-#{$i}{
+    	padding-top: $base * $i;
+    	padding-bottom: $base * $i;
+	}
+
+	.pt-#{$i}{
+    	padding-top: $base * $i;
+	}
+
+	.pb-#{$i}{
+    	padding-bottom: $base * $i;
+	}
+
+	.pl-#{$i}{
+    	padding-left: $base * $i;
+	}
+
+	.pr-#{$i}{
+    	padding-right: $base * $i;
+	}
+
+
+
+
+
+	.m-#{$i}{
+    	margin: $base * $i;
+	}
+
+	.mx-#{$i}{
+    	margin-left: $base * $i;
+    	margin-right: $base * $i;
+	}
+
+	.my-#{$i}{
+    	margin-top: $base * $i;
+    	margin-bottom: $base * $i;
+	}
+
+	.mt-#{$i}{
+    	margin-top: $base * $i;
+	}
+
+	.mb-#{$i}{
+    	margin-bottom: $base * $i;
+	}
+
+	.ml-#{$i}{
+    	margin-left: $base * $i;
+	}
+
+	.mr-#{$i}{
+    	margin-right: $base * $i;
+	}
+
+  	$i: $i + 10
+}
+  

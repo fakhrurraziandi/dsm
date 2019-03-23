@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <link rel="stylesheet" href="./dist/css/main.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper leftCanvas">
+            <div class="overlay"></div>
+            <div class="offCanvas bg-white">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link p-3">Tentang Kami</a></li>
+                    <li class="nav-item">
+                        <a href="#dropdown1" class="nav-link p-3" data-toggle="collapse">Akad Syariah</a>
+                        <div class="collapse pl-3" id="dropdown1">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link p-3">SubMenu 1</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link p-3">SubMenu 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dropdown2" class="nav-link p-3" data-toggle="collapse">Pengajuan Online</a>
+                        <div class="collapse pl-3" id="dropdown2">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link p-3">SubMenu 1</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link p-3">SubMenu 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dropdown3" class="nav-link p-3" data-toggle="collapse">Beli Motor</a>
+                        <div class="collapse pl-3" id="dropdown3">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link p-3">SubMenu 1</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link p-3">SubMenu 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link p-3">Login</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light mainNavbar">
+                    <div class="container">
+                        <button class="navbar-toggler offCanvasToggler d-inline-flex mr-2 d-md-none" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./dist/img/logo.png" alt="" style="width: 150px;">
+                        </a>
+                        <button class="navbar-toggler" style="visibility: hidden;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="about.html">Tentang Kami</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    Akad Kredit Syariah
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">SubMenu 1</a>
+                                        <a class="dropdown-item" href="#">SubMenu 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    Pengajuan Online
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">SubMenu 1</a>
+                                        <a class="dropdown-item" href="#">SubMenu 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    Beli Motor
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">SubMenu 1</a>
+                                        <a class="dropdown-item" href="#">SubMenu 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="mainContainer">
+
+
+                    <div class="header-section section jumbotron text-white bg-theme-gradient" style="background-image: url('dist/img/xd/header-section__bg__pengajuan-pembiayaan.jpg'); background-size: cover; background-position: center left;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 ml-auto text-center">
+                                    <h1 style="letter-spacing: 10px;">APLIKASI</h1>
+                                    <h2 class="font-weight-light">PENGAJUAN PEMBIAYAAN </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+
+                   
+
+                    
+                    <section class="py-150">
+                        <div class="container">
+                           
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-30">
+                                                <div class="form-group">
+                                                    <label for="nama_lengkap">NAMA LENGKAP SESUAI KTP</label>
+                                                    <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Nama Lengkap" />
+                                                </div>
+                                            </div> 
+                                            <div class="col-md-6 mb-30">
+                                                <div class="form-group">
+                                                    <label for="email">EMAIL</label>
+                                                    <input type="text" name="email" id="email" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Email Anda" />
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-30">
+                                                <div class="form-group">
+                                                    <label for="no_hp_1">No Handphone 1</label>
+                                                    <input type="text" name="no_hp_1" id="no_hp_1" class="form-control border-top-0 border-left-0 border-right-0" placeholder="No Handphone" />
+                                                </div>
+                                            </div> 
+                                            <div class="col-md-6 mb-30">
+                                                <div class="form-group">
+                                                    <label for="no_hp_2">No Handphone 2</label>
+                                                    <input type="text" name="no_hp_2" id="no_hp_2" class="form-control border-top-0 border-left-0 border-right-0" placeholder="No Handphone (Jika ada)" />
+                                                </div>
+                                            </div> 
+                                           
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-30">
+
+                                                <div class="form-group">
+                                                    <label for="no_identitas">Kartu Identitas</label>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <select name="jenis_identitas" id="jenis_identitas" class="form-control border-top-0 border-left-0 border-right-0">
+                                                                <option>Pilih</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <input type="text" name="no_identitas" id="no_identitas" class="form-control border-top-0 border-left-0 border-right-0" placeholder="No Identitas" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="kota">Kota</label>
+                                                    <select name="kota" id="kota" class="form-control border-top-0 border-left-0 border-right-0" >
+                                                        <option>Kota Tempat Tinggal Sekarang</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tempat_lahir">Tempat Tanggal Lahir</label>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control border-top-0 border-left-0 border-right-0" placeholder="No Identitas" />
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <input type="date" name="tanggal_lahir" id="tanggal_lahir" class="form-control border-top-0 border-left-0 border-right-0" placeholder="No Identitas" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="tipe_pengajuan">Tipe Pengajuan</label>
+                                                    <select name="tipe_pengajuan" id="tipe_pengajuan" class="form-control border-top-0 border-left-0 border-right-0" >
+                                                        <option>Pilih</option>
+                                                    </select>
+                                                </div>
+                                            </div> 
+                                            <div class="col-md-6 mb-30">
+                                                <div class="form-group">
+                                                    <label for="no_hp_2">Alamat dan Kode Pos</label>
+                                                    <textarea name="alamat_dan_kode_pos" id="alamat_dan_kode_pos" cols="30" rows="10" class="form-control"></textarea>
+                                                </div>
+                                            </div> 
+
+                                                
+                                           
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="custom-control custom-checkbox mb-3">
+                                                    <input type="checkbox" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">Saya setuju menerima Informasi dari Dana Syariah dan Rekanan dari Dana Syariah</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-3">
+                                                    <input type="checkbox" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio2">Saya setuju dengan syarat dan ketentuan Dana Syariah</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4 offset-md-4 text-center">
+
+                                               
+
+                                                <button class="btn btn-primary">Ajukan Sekarang!    </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    
+                    
+
+            
+                    
+                    
+                    <footer class="py-5 bg-primary text-white">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h2>Dana Syariah</h2>
+                                    <p>Kantor Pusat <br>Menara Mulia Building <br>Jl. Gatot Subroto Kav.9-11 <br>Jakarta 12930</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h2>Dukungan</h2>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-white">Karir</a></li>
+                                        <li><a href="#" class="text-white">Tanya Kami</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="./dist/img/mobile-phone.png" class="img-fluid" alt="">		
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Semakin Mudah dan Nyaman dengan DANA SYARIAH Mobile</h6>
+                                            <p><img src="./dist/img/playstore-button.png" style="width: 200px;" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <footer class="gradient-theme text-white py-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 py-2">
+                                    2019 - Dana Syariah
+                                </div>
+                                <div class="col-md-6 py-2 text-right">
+                                    Terdaftar dan diawasi Otoritas Jasa Keuangan
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="dist/js/main.js"></script>
+    </body>
+</html>

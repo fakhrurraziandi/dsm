@@ -1,0 +1,74 @@
+@function rem($value) {
+	@return unquote(($value/1px)/16+"rem");
+}
+$width: 250px;
+.wrapper {
+	overflow-x: hidden;
+	.overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		display: block;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1999;
+		cursor: pointer;
+		display: none;
+	}
+	.offCanvas {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: rem($width);
+		z-index: 2000;
+		transition: all ease 0.25s;
+		overflow-y: auto;
+	}
+	.content {
+		.mainNavbar,
+		.mainContainer {
+			transform: translateX(0);
+			transition: all ease 0.25s;
+		}
+	}
+	&.leftCanvas {
+		.offCanvas {
+			left: 0;
+			transform: translateX(-$width);
+		}
+	}
+	/**/
+	&.rightCanvas {
+		.offCanvas {
+			right: 0;
+			transform: translateX($width);
+		}
+	}
+	/*active states*/
+	&.active {
+		.overlay {
+			display: block;
+		}
+		.offCanvas {
+			transform: translateX(0);
+		}
+		&.leftCanvas {
+			.content {
+				.mainNavbar,
+				.mainContainer {
+					transform: translate($width);
+				}
+			}
+		}
+		&.rightCanvas {
+			.content {
+				.mainNavbar,
+				.mainContainer {
+					transform: translateX(-$width);
+				}
+			}
+		}
+	}
+}
